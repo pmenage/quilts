@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar class="toolbar" :clipped-left="clipped" fixed app>
+    <v-toolbar :clipped-left="clipped" fixed app>
       <v-toolbar-title v-text="title" />
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
@@ -40,8 +40,21 @@
 </template>
 
 <style>
-.toolbar {
+.v-toolbar {
   box-shadow: none;
+  background-color: #fff !important;
+}
+
+.v-content {
+  background-color: #fff;
+}
+
+.v-btn--active {
+  border-bottom: 3px solid #c23616;
+}
+
+.v-btn--active:before,
+.v-btn:focus:before {
   background-color: #fff !important;
 }
 </style>
