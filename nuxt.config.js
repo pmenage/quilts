@@ -32,7 +32,9 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/style/app.styl'],
+  css: [
+    '~/assets/style/app.styl'
+  ],
 
   /*
    ** Plugins to load before mounting the App
@@ -64,6 +66,7 @@ export default {
         import: ['~assets/style/variables.styl']
       }
     },
+    extractCSS: true,
     /*
      ** You can extend webpack config here
      */
